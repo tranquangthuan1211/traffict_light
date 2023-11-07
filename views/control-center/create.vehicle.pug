@@ -1,0 +1,45 @@
+extends layout
+
+block navbar 
+    - var isActive = 'create'
+    include navbar
+
+block content
+    span.create-header Tạo phương tiện ưu tiên
+    form.create-container(action='/vehicle', method='post')
+        .create-item
+            .form-group
+                input#license_plate.form-control(type='text', name='license_plate', required='', style='text-transform:uppercase;', value=values ? values.license_plate : '')
+                label(for='license_plate') Biển kiểm soát
+                .line
+            .select-list-group
+                label(for='vehicleType') Loại phương tiện
+                select#vehicleType(name='vehicleType', value=values ? values.vehicleType : '')
+                    option(value='ambulance', selected) Xe cấp cứu
+                    option(value='firetruck') Xe cứu hỏa
+                    option(value='police') Xe cảnh sát
+        .create-item
+            .form-group
+                input#password.form-control(type='password', name='password', required='')
+                label(for='password') Mật khẩu
+                .line
+            .form-group
+                input#confirm_password.form-control(type='password', required='', onkeyup='checkPassword()')
+                label(for='confirm_password') Xác nhận mật khẩu
+                .line
+        .create-item
+            .form-group
+                input#phone.form-control(type='text', name='phone', required='', value=values ? values.phone : '')
+                label(for='phone') Số điện thoại
+                .line
+            .form-group
+                input#address.form-control(type='text', name='address', required='', value=values ? values.address : '')
+                label(for='address') Địa chỉ
+                .line
+        .create-item
+            .form-group
+                input#company.form-control(type='text', name='company', required='', value=values ? values.company : '')
+                label(for='company') Tổ chức
+                .line
+            .form-group
+        button(type='submit', style='top: 290px') Tạo tài khoản

@@ -1,0 +1,29 @@
+extends layout
+
+block head
+	script(src='/javascripts/lib/axios.min.js')
+	script(src='/javascripts/lib/mapbox-gl.js')
+	script(src='/javascripts/lib/mapbox-gl-directions.js')
+	link(rel='stylesheet', href='/stylesheets/mapbox-gl.css')
+	link(rel='stylesheet', href='/stylesheets/mapbox-gl-directions.css')
+
+block content
+	#map
+	#menu-container.menu-container
+		span#menu-icon.menu-icon
+			i.fas.fa-bars
+		ul#menu-box.menu-box
+			li
+				a(href='#')
+					span.info-title-icon
+					i.fas.fa-user
+					span.info-title Tài khoản
+			li
+				a(href='/vehicle/logout')
+					span.info-title-icon
+					i.fas.fa-sign-out-alt
+					span.info-title Đăng xuất
+
+block addFile 
+	script(src="/socket.io/socket.io.js")
+	script(src='/javascripts/test.ktx-dhbk.js')

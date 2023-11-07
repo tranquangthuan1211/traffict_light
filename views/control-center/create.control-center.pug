@@ -1,0 +1,43 @@
+extends layout
+
+block navbar 
+    - var isActive = 'create'
+    include navbar
+
+block content
+    span.create-header Tạo tài khoản quản lý
+    form.create-container(action='/user', method='post', style='height:380px;')
+        .create-item
+            .form-group
+                input#lastname.form-control(type='text', name='lastname', required='', value=values ? values.lastname : '')
+                label(for='lastname') Họ
+                .line
+            .form-group
+                input#firstname.form-control(type='text', name='firstname', required='', value=values ? values.firstname : '')
+                label(for='firstname') Tên
+                .line
+        .create-item
+            .form-group
+                input#email.form-control(type='text', name='email', required='', onchange='validEmail()', value=values ? values.email : '')
+                label(for='email') Email
+                .line
+            .form-group
+                input#username.form-control(type='text', name='username', required='', value=values ? values.username : '')
+                label(for='username') Tên đăng nhập
+                .line
+        .create-item
+            .form-group
+                input#password.form-control(type='password', name='password', required='')
+                label(for='password') Mật khẩu
+                .line
+            .form-group
+                input#confirm_password.form-control(type='password', required='', onkeyup='checkPassword()')
+                label(for='confirm_password') Xác nhận mật khẩu
+                .line
+        .create-item
+            .form-group
+                input#phone.form-control(type='text', name='phone', required='', value=values ? values.phone : '')
+                label(for='phone') Số điện thoại
+                .line
+            .form-group
+        button(type='submit') Tạo tài khoản

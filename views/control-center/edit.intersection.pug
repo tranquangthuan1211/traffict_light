@@ -1,0 +1,66 @@
+extends layout
+
+mixin intersections(item)
+    .create-item-column
+        .form-group
+            input.form-control(type='text', name='streetNames', required='', value=item ? item.streetName : '')
+            label Tên đường
+            .line
+        .create-item
+            .form-group
+                input.form-control(type='text', name='locations', style='width: 175px', 
+                required='', value=item ? item.location.coordinates : '')
+                label Tọa độ
+                .line
+            .form-group
+                input.form-control(type='number', name='bearings', required='', value=item ? item.bearing : '')
+                label Góc
+                .line
+        .create-item
+            .form-group
+                input.form-control(type='number', name='timeReds', required='', value=item ? item.timeRed : '')
+                label Thời gian đèn đỏ
+                .line
+            .form-group
+                input.form-control(type='number', name='timeYellows', required='', value=item ? item.timeYellow : '')
+                label Thời gian đèn vàng
+                .line
+            .form-group
+                input.form-control(type='number', name='timeGreens', required='', value=item ? item.timeGreen : '')
+                label Thời gian đèn xanh
+                .line
+
+block navbar
+    - var isActive = 'edit'
+    include navbar
+
+block content
+    span.create-header Chỉnh sửa
+    form(autocomplete='off', action='/', name='searchUrl', method='get', id='search').i-form-container
+        .form-group
+            input#intersectionName.form-control(type='text', oninput='findIntersection()')
+            label(for='intersectionName') Tên giao lộ
+            .line
+            #autocomplete-box
+        button(type='submit', value='search')
+            span.icon
+                i.fas.fa-search
+            |Tìm kiếm
+    form(action="/" + values._id , method="post", id='update').create-container
+        .create-item
+            .form-group
+                input#intersectionName.form-control(type='text', name='intersectionName', required='', value=values ? values.intersectionName : '')
+                label(for='intersectionName') Tên giao lộ
+                .line
+            .form-group
+                input#location.form-control(type='text', name='firstname', required='', value=values ? values.location.coordinates : '')
+                label(for='location') Vị trí
+                .line
+            .form-group
+                input#delta.form-control(type='number', name='delta', required='', value=values ? values.delta : '')
+                label(for='delta') Thời gian lệch
+                .line
+        .create-item
+            each item, index in values.trafficLights
+                
+                +intersections(item)

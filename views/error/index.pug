@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel='shortcut icon', href='/images/LogoBK.png', type='image/x-icon')
+        link(rel='stylesheet' href='/stylesheets/fontawesome/css/all.css')
+        link(rel="stylesheet", href="/stylesheets/error.css")
+        title #{ code }
+    body
+        .error-wrapper
+            .error-title-container
+                span.dot-icon
+                    i.fas.fa-circle
+                span.error-title ERROR
+                span.dot-icon
+                    i.fas.fa-circle
+            .error-code #{ code }
+            .error-message #{ message }
+            a.back-home-btn(href='/center/overview') Trở về trang chủ

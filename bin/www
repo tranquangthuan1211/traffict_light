@@ -1,0 +1,54 @@
+#!/usr/bin/env node
+
+var debug = require('debug')('project:server');
+
+/**
+ * Make a log directory
+ */
+
+var fs = require('fs')
+try {
+	fs.mkdirSync('./logs');
+}
+catch(error) {
+	if (error.code != 'EEXIST') {
+		console.error('Could not create log directory, error was: ', error);
+		process.exit(1);
+	}
+}
+
+/**
+ * Initial log4js
+ */
+
+var log4js = require('log4js');
+log4js.configure('./config/log4js.json');
+
+var log = log4js.getLogger('startup');
+
+var app = require('../app');
+var https = require('https');
+
+var certOptions = {
+	key: fs.readFileSync('ssl/key.pem'),
+	cert: fs.readFileSync('ssl/cert.pem')
+}	
+
+/**
+ * Listen on provided port, on all network interfaces.
+ */
+
+app.set('port', process.env.PORT || 3000);
+
+var server = https.createServer(certOptions, app);
+
+var io = require('socket.io')(server);
+require('../socket/camera.socket')(io);
+require('../socket/control.socket')(io);
+require('../socket/state.socket')(io);
+require('../socket/emergency.socket')(io);
+
+server.listen(app.get('port'));
+server.on('listening', function() {
+	log.info('Express server listening on port ', server.address().port)
+});

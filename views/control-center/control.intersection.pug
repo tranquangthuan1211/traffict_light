@@ -1,0 +1,100 @@
+extends layout
+
+block head
+    include map.head.pug
+
+
+block navbar
+    - var isActive = 'control'
+    include navbar
+
+block content
+    span.create-header Điều khiển từ xa hệ thống đèn giao thông thông minh
+    .c-wrapper
+        .i-map-container
+            #map
+        #render-interact.c-container
+            .cam-container
+                .cam-item
+                    canvas#north-cam
+                    #north-street
+                .cam-item
+                    canvas#west-cam
+                    #west-street
+            .interact-container
+                .animation-wrapper
+                    .angle
+                    #top-street.horizontal-street-title
+                    .angle
+                    #left-street.vertical-street-title
+                    .animation-container
+                        .col1-row1
+                            span#top-street-time.time
+                        .traffic-light-container
+                            #top-street-light.traffic-light
+                                .color
+                                .color
+                                .color
+                        .col3-row1
+                            span#right-street-time.time
+                        .traffic-light-container
+                            #left-street-light.traffic-light
+                                .color
+                                .color
+                                .color
+                        .col2-row2.north-icon
+                        .traffic-light-container
+                            #right-street-light.traffic-light
+                                .color
+                                .color
+                                .color
+                        .col1-row3
+                            span#left-street-time.time
+                        .traffic-light-container
+                            #bottom-street-light.traffic-light
+                                .color
+                                .color
+                                .color
+                        .col3-row3
+                            span#bottom-street-time.time
+                    #right-street.vertical-street-title
+                    .angle
+                    #bottom-street.horizontal-street-title
+                    .angle
+                #render-info.info-container
+                    .info-item
+                        span Tên giao lộ
+                        span#intersection-name
+                    .info-item
+                        span Mật độ giao thông
+                        .has-tooltip
+                            span#traffic-density-state.badge
+                            span#updateTime.tool-tip
+                    .info-item
+                        span Chế độ điều khiển
+                        #mode-control.btn-container-row
+                            button#flexible-time.btn.has-tooltip
+                                span.icon-btn
+                                    i.fas.fa-history
+                                span.tool-tip Chế độ tự động sử dụng fuzzy control
+                            button#fixed-time.btn.has-tooltip
+                                span.icon-btn
+                                    i.far.fa-clock
+                                span.tool-tip Chế độ tự động sử dụng thời gian định sẵn
+                            button#manual.btn.has-tooltip
+                                span.icon-btn
+                                    i.fas.fa-hand-paper
+                                span.tool-tip Chế độ điều khiển bằng tay
+                            button#emergency.btn.has-tooltip(disabled='')
+                                span.icon-btn
+                                    i.fas.fa-plus-square
+                                span.tool-tip Chế độ khẩn cấp
+                    .info-item
+                        span(for='delta') Thời gian lệch
+                        input#delta(type='number', name='delta', required='', style='width: 50%;')
+                #render-control.control-container
+
+block addFile
+    script(src="/socket.io/socket.io.js")
+    script(src="/javascripts/lib/jpg.js")
+    script(src="/javascripts/intersection.control.js")

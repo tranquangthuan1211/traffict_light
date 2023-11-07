@@ -1,0 +1,22 @@
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        link(rel='stylesheet' href='/stylesheets/fontawesome/css/all.css')
+        link(rel='stylesheet' href='/stylesheets/main.css')
+        link(rel='shortcut icon', href='/images/logo-chuyen-le-thanh-tong.jpg', type='image/x-icon')
+        title #{ title }
+        block head
+    body
+        block navbar
+        .content-wrapper
+            .content
+                block content
+        #render-alert
+        if error
+            .alert.alert-error #{ message }
+        if success
+            .alert.alert-success #{ message }
+        block addFile
+        script(src='/javascripts/main.js')

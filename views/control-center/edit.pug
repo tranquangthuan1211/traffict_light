@@ -1,0 +1,22 @@
+extends layout
+
+block navbar
+    - var isActive = 'edit'
+    include navbar
+    script(src="/javascripts/lib/axios.min.js")
+
+block content
+    span.create-header Chỉnh sửa
+    form(autocomplete='off', action='/', name='searchUrl', method='get', id='search').i-form-container
+        .form-group
+            input#intersectionName.form-control(type='text', oninput='findIntersection()')
+            label(for='intersectionName') Tên giao lộ
+            .line
+            #autocomplete-box
+        button(type='submit', value='search')
+            span.icon
+                i.fas.fa-search
+            |Tìm kiếm
+
+block addFile
+    script(src="/javascripts/find-intersection.edit.js")

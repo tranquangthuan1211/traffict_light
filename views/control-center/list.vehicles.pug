@@ -1,0 +1,63 @@
+extends layout
+
+mixin infoVehicle(item, index)
+    tr
+        td #{ index + 1 }
+        td #{ item.license_plate }
+        td
+            if item.vehicleType == 'ambulance'
+                span.badge.ambulance-badge Xe cấp cứu
+            else if item.vehicleType == 'firetruck'
+                span.badge.fire-truck-badge Xe cứu hỏa
+            else if item.vehicleType == 'police'
+                span.badge.police-badge Xe cảnh sát
+            else if item.vehicleType == 'military'
+                span.badge.military-badge Xe quân đội
+            else
+        td #{ item.phone }
+        td #{ item.address }
+        td #{ item.company }
+        td 
+            if item.status == 'online'
+                span.badge.online-badge Đang hoạt động
+            else
+                span.badge.offline-badge Không hoạt động
+        td
+            if item.blocked == false
+                button.btn-func.has-tooltip.btn-block(id = item._id, onclick='onBlock(this.id)')
+                    i.fas.fa-ban
+                    span.tool-tip Block
+            else 
+                button.btn-func.has-tooltip.btn-unblock(id = item._id, onclick='onUnblock(this.id)')
+                    i.far.fa-circle
+                    span.tool-tip Unblock
+            button.btn-func.has-tooltip.btn-delete(id = item._id, onclick='onDelete(this.id)')
+                i.fas.fa-trash
+                span.tool-tip Xóa
+
+block navbar
+    - var isActive = 'list'
+    include navbar
+
+block content
+    span.create-header Danh sách phương tiện khẩn cấp
+    .list-container
+        .list-box.list-page
+            table.list-table
+                thead
+                    tr
+                        th STT
+                        th Biển kiểm soát
+                        th Loại phương tiện
+                        th Số điện thoại
+                        th Địa chỉ
+                        th Tổ chức
+                        th Trạng thái hoạt động
+                        th Hành động
+                tbody
+                    each item, index in vehicles
+                        +infoVehicle(item, index)
+
+block addFile
+    script(src='/javascripts/lib/axios.min.js')
+    script(src='/javascripts/list.vehicles.js')

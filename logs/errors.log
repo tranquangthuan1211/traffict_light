@@ -1,0 +1,362 @@
+[2020-12-19T22:33:17.276] [ERROR] app - Something went wrong: ClientError [NotFoundError]: Not Found
+    at C:\Users\PC\Videos\KHKT\thesis-server\app.js:39:7
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:275:10)
+    at SendStream.error (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\serve-static\index.js:121:7)
+[2020-12-20T09:01:41.929] [ERROR] app - Something went wrong: ClientError [NotFoundError]: Not Found
+    at C:\Users\PC\Videos\khkt\thesis-server\app.js:39:7
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\index.js:275:10)
+    at SendStream.error (C:\Users\PC\Videos\khkt\thesis-server\node_modules\serve-static\index.js:121:7)
+[2020-12-20T10:57:00.462] [ERROR] validates.user - Auth error, username: 92A12345, error: TypeError: Cannot read property 'password' of null
+    at C:\Users\PC\Videos\khkt\thesis-server\validates\user.validate.js:15:60
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2020-12-20T10:57:22.869] [ERROR] validates.user - Auth error, username: 92A12345, error: TypeError: Cannot read property 'password' of null
+    at C:\Users\PC\Videos\khkt\thesis-server\validates\user.validate.js:15:60
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[2020-12-20T10:58:21.983] [ERROR] app - Something went wrong: ClientError [NotFoundError]: Not Found
+    at C:\Users\PC\Videos\khkt\thesis-server\app.js:39:7
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\index.js:275:10)
+    at SendStream.error (C:\Users\PC\Videos\khkt\thesis-server\node_modules\serve-static\index.js:121:7)
+[2020-12-20T11:08:59.783] [ERROR] middleware.user - Invalid token, error: JsonWebTokenError: invalid signature
+    at C:\Users\PC\Videos\khkt\thesis-server\node_modules\jsonwebtoken\verify.js:133:19
+    at getSecret (C:\Users\PC\Videos\khkt\thesis-server\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\PC\Videos\khkt\thesis-server\node_modules\jsonwebtoken\verify.js:94:10)
+    at C:\Users\PC\Videos\khkt\thesis-server\helper\jwt.js:19:17
+    at new Promise (<anonymous>)
+    at Object.verifyToken (C:\Users\PC\Videos\khkt\thesis-server\helper\jwt.js:18:16)
+    at userMiddleware (C:\Users\PC\Videos\khkt\thesis-server\middleware\user.middleware.js:11:41)
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\PC\Videos\khkt\thesis-server\node_modules\express\lib\router\index.js:47:12)
+[2020-12-20T11:23:08.633] [ERROR] app - Something went wrong: ClientError [NotFoundError]: Not Found
+    at C:\Users\PC\Videos\KHKT\thesis-server\app.js:39:7
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:275:10)
+    at SendStream.error (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\serve-static\index.js:121:7)
+[2020-12-20T11:31:15.183] [ERROR] app - Something went wrong: ClientError [NotFoundError]: Not Found
+    at C:\Users\PC\Videos\KHKT\thesis-server\app.js:39:7
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:275:10)
+    at SendStream.error (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\serve-static\index.js:121:7)
+[2020-12-21T21:47:28.455] [ERROR] app - Something went wrong: ClientError [NotFoundError]: Not Found
+    at C:\Users\PC\Videos\KHKT\thesis-server\app.js:39:7
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:275:10)
+    at SendStream.error (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\serve-static\index.js:121:7)
+[2020-12-21T21:49:51.595] [ERROR] app - Something went wrong: ClientError [NotFoundError]: Not Found
+    at C:\Users\PC\Videos\KHKT\thesis-server\app.js:39:7
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:275:10)
+    at SendStream.error (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\serve-static\index.js:121:7)
+[2020-12-21T21:56:26.680] [ERROR] app - Something went wrong: ClientError [NotFoundError]: Not Found
+    at C:\Users\PC\Videos\KHKT\thesis-server\app.js:39:7
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:275:10)
+    at SendStream.error (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\serve-static\index.js:121:7)
+[2021-01-12T17:03:59.511] [ERROR] app - Something went wrong: ClientError [NotFoundError]: Not Found
+    at C:\Users\PC\videos\KHKT\thesis-server\app.js:39:7
+    at Layer.handle [as handle_request] (C:\Users\PC\videos\KHKT\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\PC\videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\PC\videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\PC\videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PC\videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\PC\videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\PC\videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\PC\videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\PC\videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\PC\videos\KHKT\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\PC\videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\PC\videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\PC\videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PC\videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:275:10)
+    at SendStream.error (C:\Users\PC\videos\KHKT\thesis-server\node_modules\serve-static\index.js:121:7)
+[2021-01-12T23:08:44.363] [ERROR] app - Something went wrong: ClientError [NotFoundError]: Not Found
+    at C:\Users\PC\Videos\KHKT\thesis-server\app.js:39:7
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:275:10)
+    at SendStream.error (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\serve-static\index.js:121:7)
+[2021-01-12T23:41:55.105] [ERROR] controllers.vehicle - Update current location 5fdece477a78b41458e05a9a, $s MongoError: interrupted at shutdown
+    at MessageStream.messageHandler (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\mongodb\lib\cmap\connection.js:261:20)
+    at MessageStream.emit (events.js:315:20)
+    at processIncomingData (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\mongodb\lib\cmap\message_stream.js:144:12)
+    at MessageStream._write (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\mongodb\lib\cmap\message_stream.js:42:5)
+    at writeOrBuffer (_stream_writable.js:352:12)
+    at MessageStream.Writable.write (_stream_writable.js:303:10)
+    at Socket.ondata (_stream_readable.js:719:22)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:309:12)
+    at readableAddChunk (_stream_readable.js:284:9)
+    at Socket.Readable.push (_stream_readable.js:223:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:188:23) {
+  ok: 0,
+  errmsg: 'interrupted at shutdown',
+  code: 11600,
+  codeName: 'InterruptedAtShutdown',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}
+[2021-01-13T09:38:24.778] [ERROR] app - Something went wrong: ClientError [NotFoundError]: Not Found
+    at C:\Users\PC\Videos\KHKT\thesis-server\app.js:39:7
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:275:10)
+    at SendStream.error (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\serve-static\index.js:121:7)
+[2021-01-14T12:07:18.100] [ERROR] app - Something went wrong: ClientError [NotFoundError]: Not Found
+    at C:\Users\PC\Videos\KHKT\thesis-server\app.js:39:7
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:275:10)
+    at SendStream.error (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\serve-static\index.js:121:7)
+[2021-01-14T12:10:12.024] [ERROR] middleware.user - Invalid token, error: JsonWebTokenError: invalid signature
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\jsonwebtoken\verify.js:133:19
+    at getSecret (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\jsonwebtoken\verify.js:94:10)
+    at C:\Users\PC\Videos\KHKT\thesis-server\helper\jwt.js:19:17
+    at new Promise (<anonymous>)
+    at Object.verifyToken (C:\Users\PC\Videos\KHKT\thesis-server\helper\jwt.js:18:16)
+    at userMiddleware (C:\Users\PC\Videos\KHKT\thesis-server\middleware\user.middleware.js:11:41)
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:47:12)
+[2021-01-14T21:34:48.129] [ERROR] app - Something went wrong: ClientError [NotFoundError]: Not Found
+    at C:\Users\PC\Videos\KHKT\thesis-server\app.js:39:7
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:275:10)
+    at SendStream.error (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\serve-static\index.js:121:7)
+[2021-01-14T21:38:09.574] [ERROR] middleware.user - Invalid token, error: JsonWebTokenError: invalid signature
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\jsonwebtoken\verify.js:133:19
+    at getSecret (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\jsonwebtoken\verify.js:94:10)
+    at C:\Users\PC\Videos\KHKT\thesis-server\helper\jwt.js:19:17
+    at new Promise (<anonymous>)
+    at Object.verifyToken (C:\Users\PC\Videos\KHKT\thesis-server\helper\jwt.js:18:16)
+    at userMiddleware (C:\Users\PC\Videos\KHKT\thesis-server\middleware\user.middleware.js:11:41)
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:47:12)
+[2021-01-14T21:39:40.078] [ERROR] middleware.user - Invalid token, error: JsonWebTokenError: invalid signature
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\jsonwebtoken\verify.js:133:19
+    at getSecret (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\jsonwebtoken\verify.js:94:10)
+    at C:\Users\PC\Videos\KHKT\thesis-server\helper\jwt.js:19:17
+    at new Promise (<anonymous>)
+    at Object.verifyToken (C:\Users\PC\Videos\KHKT\thesis-server\helper\jwt.js:18:16)
+    at userMiddleware (C:\Users\PC\Videos\KHKT\thesis-server\middleware\user.middleware.js:11:41)
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:47:12)
+[2021-01-14T21:44:01.532] [ERROR] middleware.vehicle - Invalid token, error: JsonWebTokenError: invalid signature
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\jsonwebtoken\verify.js:133:19
+    at getSecret (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\jsonwebtoken\verify.js:94:10)
+    at C:\Users\PC\Videos\KHKT\thesis-server\helper\jwt.js:19:17
+    at new Promise (<anonymous>)
+    at Object.verifyToken (C:\Users\PC\Videos\KHKT\thesis-server\helper\jwt.js:18:16)
+    at vehicleMiddleware (C:\Users\PC\Videos\KHKT\thesis-server\middleware\vehicle.middleware.js:11:41)
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:47:12)
+[2021-01-15T10:58:52.839] [ERROR] middleware.refreshAccessToken - Refresh token error MongooseError [MongooseServerSelectionError]: connect ECONNREFUSED 127.0.0.1:27017
+    at new MongooseServerSelectionError (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\mongoose\lib\error\serverSelection.js:22:11)
+    at Function.Model.$wrapCallback (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\mongoose\lib\model.js:4849:32)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\mongoose\lib\query.js:4345:21
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\mongoose\lib\helpers\promiseOrCallback.js:30:10)
+    at model.Query.exec (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\mongoose\lib\query.js:4344:10)
+    at model.Query.Query.then (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\mongoose\lib\query.js:4406:15)
+    at Object.user (C:\Users\PC\Videos\KHKT\thesis-server\middleware\refreshAccessToken.js:11:10)
+    at userMiddleware (C:\Users\PC\Videos\KHKT\thesis-server\middleware\user.middleware.js:20:40) {
+  reason: [TopologyDescription],
+  [Symbol(mongoErrorContextSymbol)]: {}
+}
+[2021-01-18T14:51:21.679] [ERROR] app - Something went wrong: ClientError [NotFoundError]: Not Found
+    at C:\Users\PC\Videos\KHKT\thesis-server\app.js:39:7
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\express\lib\router\index.js:275:10)
+    at SendStream.error (C:\Users\PC\Videos\KHKT\thesis-server\node_modules\serve-static\index.js:121:7)

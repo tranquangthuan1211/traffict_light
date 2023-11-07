@@ -1,0 +1,27 @@
+extends layout
+
+block navbar
+    - var isActive = 'statistic'
+    include navbar
+    script(src="/javascripts/lib/axios.min.js")
+
+block content
+    form(autocomplete='off', action='/', name='searchUrl', method='get').i-form-container
+        .form-group
+            input#intersectionName.form-control(type='text', oninput='findIntersection()')
+            label(for='intersectionName') Tên giao lộ
+            .line
+            #autocomplete-box
+        .form-group
+            input#fromTime.form-control(type='datetime-local', name='fromTime')
+            label(for='fromTime') Từ
+        .form-group
+            input#toTime.form-control(type='datetime-local', name= 'toTime')
+            label(for='toTime') Đến
+        button(type='submit')
+            span.icon
+                i.fas.fa-search
+            |Tìm kiếm
+
+block addFile
+    script(src="/javascripts/find-intersection.js")

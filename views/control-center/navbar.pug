@@ -1,0 +1,59 @@
+mixin submenu(manager, vehicle, trafficLight)
+	ul.sub-menu(style='top: 100%; left: 0; width: 7.5rem;')
+		li
+			a(href=manager) Quản lý
+		li
+			a(href=vehicle) Phương tiện
+		li
+			a(href=trafficLight) Đèn giao thông
+
+.top-navbar
+	a.brand(href='/center/overview')
+		span.brand-logo
+		span.brand-name hệ thống đèn giao thông thông minh
+	.user-info.has-sub
+		span.avatar
+		span.username #{ name }
+		i.fas.fa-chevron-down.spin-arrow
+		ul.sub-menu(style='top: 100%; right: 0rem;')
+			li
+				a(href='#')
+					i.fas.fa-user
+					span Hồ sơ
+			li
+				a(href='/center/logout')
+					i.fas.fa-sign-out-alt
+					span Đăng xuất
+ul.navbar
+	li.navbar-item(class= (isActive === 'home' ? 'active' : undefined))
+		a(href='/center/overview')
+			i.fas.fa-home
+			span Tổng quan
+	li.navbar-item(class= (isActive === 'tracking' ? 'active' : undefined))
+		a(href='/center/tracking-vehicle')
+			i.fas.fa-search-location
+			span Giám sát
+	li.navbar-item(class= (isActive === 'control' ? 'active' : undefined))
+		a(href='/center/control')
+			i.fas.fa-traffic-light
+			span Điều khiển
+	li.navbar-item(class= (isActive === 'statistic' ? 'active' : undefined))
+		a(href='/center/statistic')
+			i.fas.fa-chart-bar
+			span Thống kê
+	li.navbar-item(class= (isActive === 'edit' ? 'active' : undefined))
+		a(href='/center/edit-intersection')
+			i.fas.fa-edit
+			span Chỉnh sửa
+	li.navbar-item.has-sub(class= (isActive === 'create' ? 'active' : undefined))
+		a(href='#')
+			i.far.fa-plus-square
+			span Tạo mới
+			i.fas.fa-chevron-up.spin-arrow
+		+submenu('/center/create-control-center', '/center/create-vehicle', '/center/create-intersection')
+	li.navbar-item.has-sub(class= (isActive === 'list' ? 'active' : undefined))
+		a(href='#')
+			i.fas.fa-list-ul
+			span Danh sách
+			i.fas.fa-chevron-up.spin-arrow
+		+submenu('/center/list/managers', '/center/list/vehicles', '/center/list/intersections')

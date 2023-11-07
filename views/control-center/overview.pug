@@ -1,0 +1,140 @@
+extends layout
+
+mixin infoIntersections(item, index)
+    tr
+        td #{ index + 1 }
+        td #{ item.intersectionName }
+        td
+            if item.modeControl == 'automatic-flexible-time'
+                span.badge.automatic-flexible thời gian linh hoạt
+            else if item.modeControl == 'automatic-fixed-time'
+                span.badge.automatic-fixed thời gian cố định
+            else if item.modeControl == 'manual'
+                span.badge.manual-control điều khiển từ xa
+            else if item.modeControl == 'emergency'
+                span.badge.emergency-control khẩn cấp
+        td
+            if item.trafficDensity.state == 'very-low'
+                span.badge.vl-badge Rất thấp
+            else if item.trafficDensity.state == 'low'
+                span.badge.l-badge Thấp
+            else if item.trafficDensity.state == 'medium'
+                span.badge.m-badge Trung bình
+            else if item.trafficDensity.state == 'high'
+                span.badge.h-badge Cao
+            else if item.trafficDensity.state == 'very-high'
+                span.badge.vh-badge Rất cao
+        td #{ item.trafficDensity.date }
+        td
+            a(href='#') Xem
+
+mixin infoVehicles(item, index)
+    tr
+        td #{ index + 1 }
+        td.license_plate #{ item.license_plate }
+        td
+            if item.vehicleType == 'ambulance'
+                span.badge.ambulance-badge Xe cấp cứu
+            else if item.vehicleType == 'firetruck'
+                span.badge.fire-truck-badge Xe cứu hỏa
+            else if item.vehicleType == 'police'
+                span.badge.police-badge Xe cảnh sát
+            else if item.vehicleType == 'military'
+                span.badge.military-badge Xe quân đội
+            else
+        td
+            if item.status == 'online'
+                span.badge.online-badge Đang hoạt động
+            else
+                span.badge.offline-badge Không hoạt động
+        td 
+        
+block navbar
+    - var isActive = 'home'
+    include navbar
+
+block content
+    .overview-info
+        .poster
+            span.poster-icon.emergency-text
+                i.fas.fa-ambulance
+            span.poster-title.emergency-text Phương tiện ưu tiên
+            span.poster-number #{ nVehiclesActive }
+            span.poster-content đang hoạt động
+        .poster
+            span.poster-icon.vh-text
+                i.fas.fa-road
+            span.poster-title.vh-text Giao lộ
+            span.poster-number #{ nState[4] }
+            span.poster-content mật độ giao thông rất cao
+        .pie-chart
+            canvas#trafficState
+
+    .overview-info
+        span.list-item
+            span.icon.automatic-flexible
+                i.fas.fa-history
+            .list-content
+                div
+                    span.number #{ nMode[0] }
+                    span.species Giao lộ
+                span.state.automatic-flexible-text trong chế độ thời gian linh hoạt
+        span.list-item
+            span.icon.automatic-fixed
+                i.far.fa-clock
+            .list-content
+                div
+                    span.number #{ nMode[1] }
+                    span.species Giao lộ
+                span.state.automatic-fixed-text trong chế độ thời gian cố định
+        span.list-item
+            span.icon.manual-control
+                i.fas.fa-hand-paper
+            .list-content
+                div
+                    span.number #{ nMode[2] }
+                    span.species Giao lộ
+                span.state.manual-control-text trong chế độ điều khiển từ xa
+        span.list-item
+            span.icon.emergency-control
+                i.fas.fa-plus-square
+            .list-content
+                div
+                    span.number #{ nMode[3] }
+                    span.species Giao lộ
+                span.state.emergency-control-text trong chế độ khẩn cấp
+
+    .list-container
+        .list-box
+            table.list-table
+                thead
+                    tr
+                        th STT
+                        th Tên giao lộ
+                        th Trạng thái điều khiển
+                        th Mật độ giao thông
+                        th Thời gian cập nhật
+                        th Hành động
+                tbody
+                    each item, index in intersectionsData
+                        +infoIntersections(item, index)
+            
+    .list-container
+        .list-box
+            table.list-table
+                thead
+                    tr
+                        th STT
+                        th Biển kiểm soát
+                        th Loại phương tiện
+                        th Trạng thái hoạt động
+                        th Hành động
+                tbody
+                    each item, index in vehiclesData
+                        +infoVehicles(item, index)
+
+    script.
+        var state = !{ JSON.stringify(nState) };
+block addFile
+    script(src="/javascripts/lib/Chart.min.js")
+    script(src="/javascripts/overview.js")

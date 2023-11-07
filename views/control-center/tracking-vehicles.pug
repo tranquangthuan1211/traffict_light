@@ -1,0 +1,54 @@
+extends layout
+
+mixin infoVehicle(item)
+    tr
+        td.license_plate #{ item.license_plate }
+        td
+            if item.vehicleType == 'ambulance'
+                span.badge.ambulance-badge Xe cấp cứu
+            else if item.vehicleType == 'firetruck'
+                span.badge.fire-truck-badge Xe cứu hỏa
+            else if item.vehicleType == 'police'
+                span.badge.police-badge Xe cảnh sát
+            else if item.vehicleType == 'military'
+                span.badge.military-badge Xe quân đội
+            else
+        td #{ item.phone}
+        td
+            if item.status == 'online'
+                span.badge.online-badge Đang hoạt động
+            else
+                span.badge.offline-badge Không hoạt động
+        td #{ item.uptime }
+        td 
+            button.btn-tracking(id = item.license_plate, onclick='focusVehicle(this.id)') định vị 
+
+block head 
+    include map.head.pug
+
+block navbar
+    - var isActive = 'tracking'
+    include navbar
+
+block content
+    span.create-header Giám sát phương tiện
+    .vehicles-wrapper
+        #map
+        .list-container
+            .list-box
+                table.list-table
+                    thead
+                        tr
+                            th Biển kiểm soát
+                            th Loại phương tiện
+                            th Số điện thoại
+                            th Trạng thái hoạt động
+                            th Thời gian hoạt động
+                            th Vị trí
+
+                    tbody
+                        each item in nVehicle
+                            +infoVehicle(item)
+
+block addFile
+    script(src='/javascripts/tracking-vehicle.js')

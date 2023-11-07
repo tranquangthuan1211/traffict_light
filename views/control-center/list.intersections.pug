@@ -1,0 +1,51 @@
+extends layout
+
+mixin infoIntersections(item, index)
+    tr
+        td #{ index + 1 }
+        td #{ item.intersectionName}
+        td.has-limited
+            span.limited-text #{ item._id }
+            input(type="text", value=item._id, id = item._id, style='display: none')
+            button.btn-func.has-tooltip.btn-copy(onclick='onCopy("' + item._id + '")')
+                i.fas.fa-copy
+                span.tool-tip Copy
+        td
+            span.limited-text #{ item.token }
+            input(type="text", value=item.token, id = item.token, style='display: none')
+            button.btn-func.has-tooltip.btn-copy(id = item.token, onclick='onCopy("' + item.token + '")')
+                i.fas.fa-copy
+                span.tool-tip Copy
+        td
+            a(href="/center/statistic/" + item._id + "?fromTime=&toTime=").btn-func.has-tooltip.btn-statistic
+                i.fas.fa-chart-bar
+                span.tool-tip Xem thống kê mật độ
+            a(href="/center/edit-intersection/" + item._id).btn-func.has-tooltip.btn-edit
+                i.fas.fa-edit
+                span.tool-tip Chỉnh sửa
+            button.btn-func.has-tooltip.btn-delete(id = item._id, onclick='onDelete(this.id)')
+                i.fas.fa-trash
+                span.tool-tip Xóa
+
+block navbar
+    - var isActive = 'list'
+    include navbar
+
+block content
+    span.create-header Danh sách giao lộ trang bị hệ thống
+    .list-container
+        .list-box.list-page
+            table.list-table
+                thead
+                    tr
+                        th STT
+                        th Tên giao lộ
+                        th ID
+                        th Token
+                        th Hành động
+                tbody
+                    each item, index in intersections
+                        +infoIntersections(item, index)
+
+block addFile
+    script(src='/javascripts/list.intersections.js')

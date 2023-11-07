@@ -1,0 +1,43 @@
+extends layout
+
+block head
+    include map.head.pug
+
+block navbar 
+    - var isActive = 'create'
+    include navbar
+
+block content
+    span.create-header Tạo hệ thống đèn giao thông
+    .i-container
+        .i-map-container
+            .btn-container
+                button#line-tool.btn(type='button')
+                    i.fas.fa-route
+                button#delete-tool.btn(type='button')
+                    i.fas.fa-trash-alt
+            #map
+        .i-form-container
+            .form-group
+                input#intersectionName.form-control(type='text', name='intersectionName', required='', style='text-transform: uppercase;')
+                label(for='intersectionName') Tên giao lộ
+                .line
+            .form-group(style='width: 50%')
+                input#delta.form-control(type='number', name='delta', required='')
+                label(for='delta') Thời gian lệch
+                .line
+            .select-list-group
+                label(for='numStreet', name='numStreet') Số ngã
+                select#num-street(onchange='renderFormStreet()')
+                    option(value='0', selected) Chọn số ngã
+                    option(value='3') 3
+                    option(value='4') 4
+            button#btn-create 
+                span.icon
+                    i.fas.fa-plus-circle
+                | Tạo
+        #info-street.i-form-container
+
+block addFile
+    script(src='/javascripts/intersection.mapbox.js')
+    script(src='/javascripts/intersection.create.js')

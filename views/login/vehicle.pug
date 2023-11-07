@@ -1,0 +1,16 @@
+extends layout
+
+block content
+	form(action='/vehicle/login', method='post')
+		.input-box
+			span.icon
+				i.fas.fa-ambulance
+			input(type='text', name='license_plate', placeholder='Biển kiểm soát', required='', value=values ? values.license_plate : '')
+		.input-box
+			span.icon
+				i.fas.fa-key
+			input(type='password', name='password', placeholder='Mật khẩu', required='', value=values ? values.password : '')
+		a(href='/center-control/login') > Trung tâm quản lý
+		button(type='submit') đăng nhập
+	if error
+		.alert-error Tên đăng nhập hoặc mật khẩu không đúng !
